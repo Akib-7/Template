@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* body {
+  padding: 15px;
+  background-color: #000000;
+}
+/* Variable Font: Erode (Normal) */
+@font-face {
+  font-family: "Erode";
+  src: url("/src/assets/fonts/Erode-Variable.ttf") format("truetype");
+  font-weight: 100 900; /* Enables variable weights */
+  font-style: normal;
+}
+
+/* Variable Font: Erode (Italic) */
+@font-face {
+  font-family: "Erode";
+  src: url("/src/assets/fonts/Erode-VariableItalic.ttf") format("truetype");
+  font-weight: 100 900; /* Enables variable weights */
+  font-style: italic;
+  font-display: "swap";
+}
+
+/* Non-Variable Font: DM Serif Display */
+@font-face {
+  font-family: "DM";
+  src: url("/src/assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+/* For Webkit Browsers (Chrome, Edge, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #000000
+  ); /* Thumb gradient color */
+  border-radius: 90px; /* Rounded edges */
+}
+
+/* For Firefox */
+
+/* For Internet Explorer & Edge Legacy */
+body {
+  -ms-overflow-style: scrollbar; /* Ensures scrollbars are visible */
+}
