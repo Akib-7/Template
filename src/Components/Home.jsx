@@ -246,7 +246,7 @@ const Home = () => {
             </h1>
           </div>
 
-          <p ref={paragraphRef} className="  tracking-wider font-erode ">
+          <p ref={paragraphRef} className="  tracking-wider font-erode  ">
             Inspired by the golden age of design and crafted with the precision
             of tomorrow, this watch is more than an accessory – it’s a
             statement. A rare blend of retro elegance and futuristic innovation,
@@ -255,7 +255,7 @@ const Home = () => {
           </p>
           <div
             ref={mainButtonRef}
-            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-erode h-fit"
+            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-serif  h-fit"
           >
             <img
               src={brownPage}
@@ -265,7 +265,7 @@ const Home = () => {
               className="w-full h-full top-0 absolute z-0"
               alt=""
             />
-            <h1 className="text-xl text-bg1 font-bold z-10">Pre-order Now</h1>
+            <h1 className="text-lg  text-bg1 font-bold z-10">Pre-order Now</h1>
           </div>
 
           <h1

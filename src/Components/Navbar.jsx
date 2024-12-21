@@ -61,7 +61,7 @@ const Navbar = () => {
     >
       <div
         ref={navbarRef}
-        className="w-fit  fixed font-erode h-fit px-5 top-[5%] right-10 cursor-pointer flex flex-col items-center space-y-1 justify-center text-color1    text-sm tracking-widest  "
+        className="w-fit  fixed font-serif h-fit px-5 top-[5%] right-10 cursor-pointer flex flex-col items-center space-y-1 justify-center text-color1    text-xs tracking-widest  "
       >
         <div className="bg-black/70 overflow-hidden relative w-[9vw] flex items-center justify-center  rounded-lg py-[5px]">
           <h1 className="z-10 text-bg1 font-extrabold">Home </h1>
@@ -119,9 +119,9 @@ const Navbar = () => {
         <h1
           style={{ zIndex: "1000" }}
           ref={timeRef}
-          className="fixed left-1/2 translate-x-[-50%] uppercase font-erode  text-lg "
+          className="fixed left-1/2 translate-x-[-50%] uppercase font-serif  text-sm "
         >
-          local time: <span className="">{time}, Pakistan</span>
+          local time : <span className=""> {time}, Pakistan</span>
         </h1>
       </div>
     </div>
