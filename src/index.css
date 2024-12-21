@@ -19,7 +19,6 @@
   src: url("/src/assets/fonts/Erode-VariableItalic.ttf") format("truetype");
   font-weight: 100 900; /* Enables variable weights */
   font-style: italic;
-  font-display: "swap";
 }
 
 /* Non-Variable Font: DM Serif Display */
