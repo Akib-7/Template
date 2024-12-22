@@ -37,7 +37,7 @@ const Loading = ({ loadMethod }) => {
     tl.to(".TEXT", {
       top: "-47.5%",
       left: "-43.8%",
-      scale: 0.4,
+      scale: 0.3,
       duration: 1,
       ease: "power4.in",
     });
@@ -49,7 +49,7 @@ const Loading = ({ loadMethod }) => {
         ref={targetRef}
         className="w-[100%] relative h-screen rounded-lg   from-red-800 via-red-950 to-black bg-gradient-to-b flex items-center justify-center"
       >
-        <h1 className="TEXT relative font-dmIt italic font-bold opacity-0 text-6xl text-white">
+        <h1 className="TEXT relative font-dmIt italic font-bold opacity-0 text-7xl text-white">
           Tymless.
         </h1>
       </div>
