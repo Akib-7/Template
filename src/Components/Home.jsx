@@ -17,7 +17,7 @@ const Home = () => {
   const productsRef = useRef(null);
   const targetRef = useRef(null);
   const moreTextRef = useRef(null);
-  const productsTextRef = useRef(null);
+  const relicsTextRef = useRef(null);
   const tymlessTextRef = useRef(null);
 
   const extraTextsRef1 = useRef(null);
@@ -94,11 +94,11 @@ const Home = () => {
       "text-move"
     );
     t4.to(
-      productsTextRef.current,
+      relicsTextRef.current,
       {
         top: "42.5vh",
         scale: 1.2,
-        right: "-1.2vw",
+        right: "-1.1vw",
       },
       "text-move"
     );
@@ -117,30 +117,28 @@ const Home = () => {
   });
   const entryAnimation = gsap.timeline({
     defaults: {
-      delay: 0.5,
+      delay: 0.2,
     },
   });
   useGSAP(() => {
     entryAnimation.from(
       imageCenterRef.current,
       {
-        y: 100,
-        scale: 0.8,
+        y: 30,
+
         opacity: 0,
-        duration: 1,
-        ease: "power2.in",
-        zIndex: "1000",
+        duration: 2,
+        ease: "circ.inOut",
       },
       "entry-animation"
     );
     entryAnimation.from(
       imageRightRef.current,
       {
-        y: 0,
-        scale: 0.8,
+        scale: 0.7,
         opacity: 0,
         duration: 1,
-        ease: "power2.in",
+        ease: "circ.inOut",
       },
       "entry-animation"
     );
@@ -149,7 +147,7 @@ const Home = () => {
       {
         y: 0,
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
         ease: "power4.in",
       },
       "entry-animation"
@@ -159,7 +157,7 @@ const Home = () => {
       {
         y: 200,
         opacity: 0,
-        duration: 3,
+        duration: 1.5,
         ease: "back.out",
       },
       "entry-animation"
@@ -169,7 +167,7 @@ const Home = () => {
       {
         y: 100,
         opacity: 0,
-        duration: 3,
+        duration: 1.5,
         ease: "back.out",
       },
       "entry-animation"
@@ -179,7 +177,7 @@ const Home = () => {
       {
         y: 130,
         opacity: 0,
-        duration: 3,
+        duration: 1.5,
         ease: "back.out",
       },
       "entry-animation"
@@ -188,7 +186,7 @@ const Home = () => {
       paragraphRef.current,
       {
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
         ease: "power4.in",
       },
       "entry-animation"
@@ -196,10 +194,11 @@ const Home = () => {
     entryAnimation.from(
       ".HEADING-WORD",
       {
-        y: 80,
+        y: 50,
+
         opacity: 0,
         duration: 1,
-        delay: 1,
+
         ease: "power4.out",
         stagger: 0.02,
       },
@@ -227,7 +226,7 @@ const Home = () => {
           <div className="flex overflow-hidden items-end justify-center">
             <h1
               style={{ lineHeight: "2.5vw" }}
-              className="tracking-tight italic font-dm text-4xl"
+              className="tracking-tight  font-dmIt text-4xl"
             >
               {"A Limited Legacy – Own It Before It’s Gone"
                 .split(" ")
@@ -246,7 +245,10 @@ const Home = () => {
             </h1>
           </div>
 
-          <p ref={paragraphRef} className="  tracking-wider font-erode  ">
+          <p
+            ref={paragraphRef}
+            className="  tracking-wide font-slab font-light "
+          >
             Inspired by the golden age of design and crafted with the precision
             of tomorrow, this watch is more than an accessory – it’s a
             statement. A rare blend of retro elegance and futuristic innovation,
@@ -255,7 +257,7 @@ const Home = () => {
           </p>
           <div
             ref={mainButtonRef}
-            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-serif  h-fit"
+            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab  h-fit"
           >
             <img
               src={brownPage}
@@ -265,7 +267,7 @@ const Home = () => {
               className="w-full h-full top-0 absolute z-0"
               alt=""
             />
-            <h1 className="text-lg  text-bg1 font-bold z-10">Pre-order Now</h1>
+            <h1 className="  text-bg1 font-extrabold z-10">Pre-order Now</h1>
           </div>
 
           <h1
@@ -292,21 +294,30 @@ const Home = () => {
           style={{ zIndex: 1000 }}
           className="Center relative mt-[60px]  h-full w-[40%] flex items-center justify-center"
         >
-          <div className=" h-full w-full  flex items-start  justify-center">
-            <img
-              src={surface}
-              className="w-[80%] mt-[40px] h-[80%] object-contain"
-              alt=""
-            />
+          <div className=" w-[50vw]   flex items-start  justify-center">
+            <div className="h-full w-full -mt-[80px] flex items-start  justify-center">
+              <img
+                src={surface}
+                width="500"
+                alt="Surface"
+                style={{ display: "block" }}
+                loading="eager"
+                fetchpriority="high"
+              />
+            </div>
+
             <div
               style={{ zIndex: "999" }}
               ref={targetRef}
-              className="w-fit h-fit top-[120px]  absolute flex items-center justify-center "
+              className="w-fit h-fit top-[130px]  absolute flex items-center justify-center "
             >
               <img
                 src={gold}
-                className="w-[50%] h-[50%] object-contain"
-                alt=""
+                width="300"
+                alt="Surface"
+                style={{ display: "block" }}
+                loading="eager"
+                fetchpriority="high"
               />
             </div>
           </div>
@@ -316,31 +327,33 @@ const Home = () => {
           className="right  mt-[150px] relative  h-full w-[30%] flex flex-col items-center justify-start pt-[100px]"
         >
           <div className="w-[100%]   h-[500px]   relative flex items-start justify-center">
-            <div className=" w-[200px] h-[150px] flex items-center justify-center absolute rotate-12 bg-gradient-to-t  from-[#E99079] opacity-100 rounded-2xl p-3 ">
+            <div className=" w-[180px] h-[130px] flex items-center justify-center absolute rotate-12 bg-gradient-to-t  from-[#E99079] opacity-100 rounded-2xl p-3 ">
               <img
                 src={black}
+                loading="lazy"
                 className="w-[80%] h-[80%] object-contain"
                 alt=""
               />{" "}
             </div>
-            <div className=" w-[200px] h-[150px] flex items-center justify-center absolute -rotate-12  top-[30%] bg-gradient-to-l from-[#E99079] opacity-70 rounded-lg p-3 ">
+            <div className=" w-[180px] h-[130px] flex items-center justify-center absolute -rotate-12  top-[30%] bg-gradient-to-l from-[#E99079] opacity-70 rounded-lg p-3 ">
               <img
                 src={gold2}
+                loading="lazy"
                 className="w-[80%] h-[80%] object-contain"
                 alt=""
               />{" "}
             </div>
-            <div className=" w-[200px] h-[150px] flex items-center justify-center absolute rotate-12  top-[60%] bg-gradient-to-b from-[#E99079]/70 rounded-lg p-3 ">
+            <div className=" w-[180px] h-[130px] flex items-center justify-center absolute rotate-12  top-[60%] bg-gradient-to-b from-[#E99079]/70 rounded-lg p-3 ">
               <h1 className="text-7xl  font-dm text-color1">?</h1>
             </div>
           </div>
           <div className=" absolute right-10 h-[400px] flex flex-col items-center rounded-l-3xl justify-center -space-y-1  top-[15%] w-[20px] ">
-            <h1 className=" text-lg font-dm text-color1/70">L</h1>
-            <h1 className=" text-lg font-dm text-color1/70">A</h1>
-            <h1 className=" text-lg font-dm text-color1/70">T</h1>
-            <h1 className=" text-lg font-dm text-color1/70">E</h1>
-            <h1 className=" text-lg font-dm text-color1/70">S</h1>
-            <h1 className=" text-lg font-dm text-color1/70">T</h1>
+            <h1 className=" italic font-dm text-color1/70">L</h1>
+            <h1 className=" italic font-dm text-color1/70">A</h1>
+            <h1 className=" italic font-dm text-color1/70">T</h1>
+            <h1 className=" italic font-dm text-color1/70">E</h1>
+            <h1 className=" italic font-dm text-color1/70">S</h1>
+            <h1 className=" italic font-dm text-color1/70">T</h1>
           </div>
         </div>
       </div>
@@ -384,7 +397,7 @@ const Home = () => {
             More
           </h1>
           <h1
-            ref={productsTextRef}
+            ref={relicsTextRef}
             className="relative  text-white font-dm text-4xl"
           >
             Relics
@@ -420,7 +433,6 @@ const Home = () => {
             <div className="P-1 w-[100%] h-[100%] -top-[220px] absolute  ">
               <img
                 src={gold2}
-                loading="lazy"
                 className="w-[100%] h-[110%] object-contain"
                 alt=""
               />
@@ -439,7 +451,7 @@ const Home = () => {
                 32,000 -/pkr
               </h1>
 
-              <div className="BUTTON relative w-[280px]   bg-red-950 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-erode h-fit">
+              <div className="BUTTON relative w-[280px]   bg-red-950 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab h-fit">
                 <h1 className="text-xl text-white font-bold z-10">Buy Now</h1>
               </div>
             </div>
@@ -468,7 +480,7 @@ const Home = () => {
                 42,000 -/pkr
               </h1>
 
-              <div className="BUTTON relative w-[280px]   bg-red-950 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-erode h-fit">
+              <div className="BUTTON relative w-[280px]   bg-red-950 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab h-fit">
                 <h1 className="text-xl text-white font-bold z-10">Buy Now</h1>
               </div>
             </div>
@@ -485,7 +497,6 @@ const Home = () => {
             <div className="P-1 w-[100%] h-[100%] -top-[200px] absolute  ">
               <img
                 src={black}
-                loading="lazy"
                 className="w-[100%] h-[95%] object-contain"
                 alt=""
               />
@@ -504,7 +515,7 @@ const Home = () => {
                 32,000 -/pkr
               </h1>
 
-              <div className="BUTTON relative w-[280px]   bg-red-950 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-erode h-fit">
+              <div className="BUTTON relative w-[280px]   bg-red-950 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab h-fit">
                 <h1 className="text-xl text-white font-bold z-10">Buy Now</h1>
               </div>
             </div>

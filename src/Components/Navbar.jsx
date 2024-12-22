@@ -119,7 +119,7 @@ const Navbar = () => {
         <h1
           style={{ zIndex: "1000" }}
           ref={timeRef}
-          className="fixed left-1/2 translate-x-[-50%] uppercase font-serif  text-sm "
+          className="fixed left-1/2 translate-x-[-50%] uppercase font-slab  text-sm "
         >
           local time : <span className=""> {time}, Pakistan</span>
         </h1>

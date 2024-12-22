@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        erode: ["Erode", "sans-serif"],
-        dm: ["DM", "serif"],
+        dm: ["DM", "mono"],
+        dmIt: ["DM-It", "mono"],
+        slab: ["slab", "mono"],
       },
       colors: {
         bg1: "#35140B",

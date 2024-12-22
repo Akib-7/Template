@@ -6,25 +6,23 @@
   background-color: #000000;
 }
 /* Variable Font: Erode (Normal) */
-@font-face {
-  font-family: "Erode";
-  src: url("/src/assets/fonts/Erode-Variable.ttf") format("truetype");
-  font-weight: 100 900; /* Enables variable weights */
-  font-style: normal;
-}
-
-/* Variable Font: Erode (Italic) */
-@font-face {
-  font-family: "Erode";
-  src: url("/src/assets/fonts/Erode-VariableItalic.ttf") format("truetype");
-  font-weight: 100 900; /* Enables variable weights */
-  font-style: italic;
-}
 
 /* Non-Variable Font: DM Serif Display */
 @font-face {
+  font-family: "DM-It";
+  src: url("src/assets/Fonts/DMSerifDisplay-Italic.ttf") format("truetype");
+  font-weight: 100 900; /* Regular weight */
+  font-style: italic;
+}
+@font-face {
   font-family: "DM";
-  src: url("/src/assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+  src: url("src/assets/Fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: "slab";
+  src: url("src/assets/Fonts/Slab.ttf") format("truetype");
   font-weight: 100 900; /* Regular weight */
   font-style: normal;
 }

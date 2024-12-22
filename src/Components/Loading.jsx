@@ -1,10 +1,13 @@
 import { useGSAP } from "@gsap/react";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-
+import { preloadImages } from "./assets";
 const Loading = ({ loadMethod }) => {
   const targetRef = useRef(null);
-
+  useEffect(() => {
+    // Preload images when the component mounts
+    preloadImages();
+  }, []);
   useGSAP(() => {
     const tl = gsap.timeline({
       onComplete: () => {
