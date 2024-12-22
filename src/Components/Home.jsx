@@ -376,16 +376,16 @@ const Home = () => {
         />
 
         <div className="TEXTS relative w-[85%]  rounded-lg h-[70%] text-red-950  flex flex-col items-center justify-center">
-          <h1 className="FEATURE-TEXT absolute top-[10%] w-[400px] text-center   left-0 font-dm text-2xl ">
+          <h1 className="FEATURE-TEXT  font-bold absolute top-[10%] w-[400px] text-center   left-0 font-dmIt text-2xl ">
             1- Retro Aesthetic Meets Modern Durability
           </h1>
-          <h1 className="FEATURE-TEXT font-dm text-center w-[400px] text-2xl absolute  top-[30%]  right-0 ">
+          <h1 className="FEATURE-TEXT font-bold font-dmIt text-center w-[400px] text-2xl absolute  top-[30%]  right-0 ">
             2- Futuristic Quartz Movement for Unmatched Accuracy
           </h1>
-          <h1 className="FEATURE-TEXT font-dm text-center w-[400px]  text-2xl absolute top-[50%]  left-0">
+          <h1 className="FEATURE-TEXT font-bold font-dmIt text-center w-[400px]  text-2xl absolute top-[50%]  left-0">
             3- Scratch-Resistant Sapphire Crystal Glass Display
           </h1>
-          <h1 className="FEATURE-TEXT font-dm w-[400px] text-center  text-2xl absolute top-[70%]  right-0">
+          <h1 className="FEATURE-TEXT font-bold font-dmIt w-[400px] text-center  text-2xl absolute top-[70%]  right-0">
             4- Timeless Brass Finish for Vintage Appeal
           </h1>
         </div>
