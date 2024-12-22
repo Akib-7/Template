@@ -128,7 +128,7 @@ const Home = () => {
 
         opacity: 0,
         duration: 2,
-        ease: "circ.inOut",
+        ease: "power1.inOut",
       },
       "entry-animation"
     );
@@ -209,20 +209,6 @@ const Home = () => {
     <div className="w-full CONTAINER h-screen  from-red-800 via-red-950 to-black bg-gradient-to-b text-white ">
       <div className=" HERO-SECTION w-full h-full flex items-center justify-center">
         <div className="LEFT relative  h-[90%] w-[30%] flex flex-col items-start pt-[100px] space-y-[30px] pl-10">
-          {/* <div className="flex overflow-hidden  items-end justify-center">
-            <h1
-              style={{ lineHeight: "2.5vw" }}
-              className=" tracking-tight italic font-dm text-4xl"
-            >
-              {"A Limited Legacy – Own It Before It’s Gone"
-                .split(" ")
-                .map((item, index) => (
-                  <span key={index} className="HEADING-WORD pr-2 inline-block">
-                    {item}
-                  </span>
-                ))}
-            </h1>
-          </div> */}
           <div className="flex overflow-hidden items-end justify-center">
             <h1
               style={{ lineHeight: "2.5vw" }}
@@ -257,7 +243,7 @@ const Home = () => {
           </p>
           <div
             ref={mainButtonRef}
-            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab font-bold h-fit"
+            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2  h-fit"
           >
             <img
               src={brownPage}
@@ -267,7 +253,7 @@ const Home = () => {
               className="w-full h-full top-0 absolute z-0"
               alt=""
             />
-            <h1 className="  text-bg1 font-extrabold z-10">Pre-order Now</h1>
+            <h1 className="font-slab font-bold text-bg1 z-10">Pre-order Now</h1>
           </div>
 
           <h1
@@ -324,10 +310,18 @@ const Home = () => {
         </div>
         <div
           ref={imageRightRef}
-          className="right  mt-[150px] relative  h-full w-[30%] flex flex-col items-center justify-start pt-[100px]"
+          className="right  mt-[100px] relative  h-full w-[30%] flex flex-col items-center justify-start pt-[130px]"
         >
-          <div className="w-[100%]   h-[500px]   relative flex items-start justify-center">
-            <div className=" w-[180px] h-[130px] flex items-center justify-center absolute rotate-12 bg-gradient-to-t  from-[#E99079] opacity-100 rounded-2xl p-3 ">
+          <div
+            style={{ perspective: 1000 }}
+            className="w-[100%]   h-[500px]   relative flex items-start justify-center"
+          >
+            <div
+              style={{
+                transform: "rotateX(30deg)  rotate(-10deg)",
+              }}
+              className=" w-[180px] shadow-xl shadow-color1/50 h-[130px] flex items-center justify-center absolute rotate-12 bg-gradient-to-t  from-[#E99079] to-[#E99079]/20 opacity-100 rounded-2xl p-3 "
+            >
               <img
                 src={black}
                 loading="lazy"
@@ -335,7 +329,13 @@ const Home = () => {
                 alt=""
               />{" "}
             </div>
-            <div className=" w-[180px] h-[130px] flex items-center justify-center absolute -rotate-12  top-[30%] bg-gradient-to-l from-[#E99079] opacity-70 rounded-lg p-3 ">
+            <div
+              style={{
+                // transform: "rotateY(-30deg)   rotateZ(50deg) rotate(-60deg)",
+                transform: "rotateX(40deg)  rotate(20deg)",
+              }}
+              className=" w-[180px] h-[130px] mt-1 shadow-xl shadow-color1/50 flex items-center justify-center absolute -rotate-12  top-[30%] bg-gradient-to-l from-[#E99079] to-[#E99079]/20 opacity-70 rounded-lg p-3 "
+            >
               <img
                 src={gold2}
                 loading="lazy"
@@ -343,7 +343,12 @@ const Home = () => {
                 alt=""
               />{" "}
             </div>
-            <div className=" w-[180px] h-[130px] flex items-center justify-center absolute rotate-12  top-[60%] bg-gradient-to-b from-[#E99079]/70 rounded-lg p-3 ">
+            <div
+              style={{
+                transform: "rotateX(50deg)  rotate(-10deg)",
+              }}
+              className=" w-[180px] h-[130px] shadow-xl shadow-color1/30 flex items-center justify-center absolute rotate-12  top-[60%] bg-gradient-to-b from-[#E99079]/70 to-[#E99079]/20 rounded-lg p-3 "
+            >
               <h1 className="text-7xl  font-dm text-color1">?</h1>
             </div>
           </div>

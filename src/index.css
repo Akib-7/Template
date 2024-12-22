@@ -26,7 +26,6 @@
   src: url("src/assets/Fonts/Slab.ttf") format("truetype");
   font-weight: 100 900; /* Regular weight */
   font-style: normal;
-  font-display: "swap";
 }
 /* For Webkit Browsers (Chrome, Edge, Safari, Opera) */
 ::-webkit-scrollbar {
