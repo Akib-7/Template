@@ -113,7 +113,10 @@ const Navbar = () => {
         <h1 className=" rounded-lg"></h1>
       </div>
       <div className="w-[100%]  relative cursor-pointer flex text-white items-center justify-start px-10 text-2xl p-5 ">
-        <h1 style={{ zIndex: "1000" }} className="fixed">
+        <h1
+          style={{ zIndex: "1000" }}
+          className="fixed font-dmIt italic font-bold"
+        >
           Tymless.
         </h1>
         <h1

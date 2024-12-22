@@ -226,7 +226,7 @@ const Home = () => {
           <div className="flex overflow-hidden items-end justify-center">
             <h1
               style={{ lineHeight: "2.5vw" }}
-              className="tracking-tight  font-dmIt text-4xl"
+              className="tracking-tight  font-dmIt italic font-bold text-4xl"
             >
               {"A Limited Legacy – Own It Before It’s Gone"
                 .split(" ")
@@ -257,7 +257,7 @@ const Home = () => {
           </p>
           <div
             ref={mainButtonRef}
-            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab  h-fit"
+            className="BUTTON relative w-[200px]   bg-color1 rounded-lg  overflow-hidden flex items-center justify-center px-5 py-2 font-slab font-bold h-fit"
           >
             <img
               src={brownPage}
