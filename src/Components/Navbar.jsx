@@ -120,7 +120,7 @@ const Navbar = () => {
           Tymless.
         </h1>
         <h1
-          style={{ zIndex: "1000" }}
+          style={{ zIndex: "1005" }}
           ref={timeRef}
           className="fixed left-1/2 translate-x-[-50%] uppercase font-slab  text-sm "
         >

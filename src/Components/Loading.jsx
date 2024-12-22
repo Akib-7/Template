@@ -36,8 +36,8 @@ const Loading = ({ loadMethod }) => {
 
     tl.to(".TEXT", {
       top: "-47.5%",
-      left: "-43.8%",
-      scale: 0.3,
+      left: "-44%",
+      scale: 0.33,
       duration: 1,
       ease: "power4.in",
     });

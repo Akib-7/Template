@@ -277,7 +277,7 @@ const Home = () => {
         </div>
         <div
           ref={imageCenterRef}
-          style={{ zIndex: 1000 }}
+          style={{ zIndex: "99" }}
           className="Center relative mt-[60px]  h-full w-[40%] flex items-center justify-center"
         >
           <div className=" w-[50vw]   flex items-start  justify-center">
@@ -390,7 +390,7 @@ const Home = () => {
           </h1>
         </div>
         <div
-          style={{ zIndex: "998" }}
+          style={{ zIndex: "1" }}
           className="BANNER-TEXTS w-full bg-red-950 h-fit space-x-3 flex items-center justify-center relative"
         >
           <h1 className="relative  text-white font-dm text-4xl">You</h1>
