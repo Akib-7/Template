@@ -27,18 +27,16 @@ const Navbar = () => {
     return () => clearInterval(interval); // Clean up interval
   }, []);
 
-  const navAnimation = gsap.timeline({
-    defaults: {
-      delay: 0.5,
-    },
-  });
+  const navAnimation = gsap.timeline();
 
   useGSAP(() => {
     navAnimation.from(
       navbarRef.current,
       {
+        delay: 2.5,
         opacity: 0,
-        duration: 2,
+
+        duration: 1,
         ease: "power4.in",
       },
       "nav-animation"
@@ -47,8 +45,8 @@ const Navbar = () => {
       timeRef.current,
       {
         opacity: 0,
-        duration: 2,
-        ease: "power4.in",
+        duration: 2.5,
+        ease: "power1.in",
       },
       "nav-animation"
     );

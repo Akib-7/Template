@@ -115,81 +115,19 @@ const Home = () => {
       stagger: 0.05,
     });
   });
-  const entryAnimation = gsap.timeline({
-    defaults: {
-      delay: 0.2,
-    },
-  });
+  const entryAnimation = gsap.timeline();
   useGSAP(() => {
     entryAnimation.from(
       imageCenterRef.current,
       {
-        y: 30,
-
-        opacity: 0,
-        duration: 2,
-        ease: "power1.inOut",
-      },
-      "entry-animation"
-    );
-    entryAnimation.from(
-      imageRightRef.current,
-      {
-        scale: 0.7,
-        opacity: 0,
-        duration: 1,
-        ease: "circ.inOut",
-      },
-      "entry-animation"
-    );
-    entryAnimation.from(
-      mainButtonRef.current,
-      {
-        y: 0,
-        opacity: 0,
-        duration: 1,
-        ease: "power4.in",
-      },
-      "entry-animation"
-    );
-    entryAnimation.from(
-      extraTextsRef1.current,
-      {
         y: 200,
+        scale: 0.5,
+        delay: 0.5,
         opacity: 0,
-        duration: 1.5,
-        ease: "back.out",
+        duration: 2.5,
+        ease: "expo.inOut",
       },
-      "entry-animation"
-    );
-    entryAnimation.from(
-      extraTextsRef2.current,
-      {
-        y: 100,
-        opacity: 0,
-        duration: 1.5,
-        ease: "back.out",
-      },
-      "entry-animation"
-    );
-    entryAnimation.from(
-      extraTextsRef3.current,
-      {
-        y: 130,
-        opacity: 0,
-        duration: 1.5,
-        ease: "back.out",
-      },
-      "entry-animation"
-    );
-    entryAnimation.from(
-      paragraphRef.current,
-      {
-        opacity: 0,
-        duration: 1,
-        ease: "power4.in",
-      },
-      "entry-animation"
+      "1st"
     );
     entryAnimation.from(
       ".HEADING-WORD",
@@ -202,11 +140,76 @@ const Home = () => {
         ease: "power4.out",
         stagger: 0.02,
       },
-      "entry-animation"
+      "1st-round"
+    );
+    entryAnimation.from(
+      paragraphRef.current,
+      {
+        opacity: 0,
+        duration: 0.8,
+        ease: "linear",
+      },
+      "1st-round"
+    );
+
+    entryAnimation.from(
+      imageRightRef.current,
+      {
+        x: -300,
+
+        scale: 0.5,
+        delay: 0.5,
+        opacity: 0,
+        duration: 2.5,
+
+        ease: "expo.inOut",
+      },
+      "1st"
+    );
+
+    // --------1st-round--------------------------------------------------------------------
+    entryAnimation.from(
+      mainButtonRef.current,
+      {
+        opacity: 0,
+        duration: 1,
+        ease: "power1.in",
+      },
+      "1st-round"
+    );
+    entryAnimation.from(
+      extraTextsRef1.current,
+      {
+        y: 200,
+        opacity: 0,
+        duration: 2.5,
+        ease: "back.out(2)",
+      },
+      "1st-round"
+    );
+    entryAnimation.from(
+      extraTextsRef2.current,
+      {
+        y: 200,
+        opacity: 0,
+        duration: 2.5,
+        ease: "back.out(2)",
+      },
+      "1st-round"
+    );
+    entryAnimation.from(
+      extraTextsRef3.current,
+      {
+        y: 200,
+        opacity: 0,
+        duration: 2.5,
+        ease: "back.out(2)",
+      },
+      "1st-round"
     );
   });
   return (
-    <div className="w-full CONTAINER h-screen  from-red-800 via-red-950 to-black bg-gradient-to-b text-white ">
+    <div className="w-full CONTAINER h-screen   from-red-800 via-red-950 to-black bg-gradient-to-b text-white ">
       <div className=" HERO-SECTION w-full h-full flex items-center justify-center">
         <div className="LEFT relative  h-[90%] w-[30%] flex flex-col items-start pt-[100px] space-y-[30px] pl-10">
           <div className="flex overflow-hidden items-end justify-center">
