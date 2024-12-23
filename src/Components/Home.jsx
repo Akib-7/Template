@@ -6,7 +6,6 @@ const Home = () => {
   const targetRef = useRef(null);
   const moreTextRef = useRef(null);
   const relicsTextRef = useRef(null);
-  const tymlessTextRef = useRef(null);
 
   const extraTextsRef1 = useRef(null);
   const extraTextsRef2 = useRef(null);
