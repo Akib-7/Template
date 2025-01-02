@@ -2,13 +2,8 @@
 import surface from "../assets/Pictures/surface.webp";
 import black from "../assets/Pictures/black.webp";
 
-import gold from "../assets/Pictures/gold.webp";
-import gold2 from "../assets/Pictures/gold2.webp";
-import brownPage from "../assets/Pictures/brownPage.webp";
-import productPage from "../assets/Pictures/productPaper.webp";
-
 // Exporting images
-export const images = [surface, black, gold, gold2, brownPage, productPage];
+export const images = [surface, black];
 
 // Preloading function
 export const preloadImages = () => {

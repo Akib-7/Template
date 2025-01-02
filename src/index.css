@@ -2,38 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 * body {
-  padding: 15px;
+ 
   background-color: #000000;
 }
 /* Variable Font: Erode (Normal) */
 
 /* Non-Variable Font: DM Serif Display */
-@font-face {
+/* @font-face {
   font-family: "DM-It";
   src: url("src/assets/Fonts/DMSerifDisplay-Italic.ttf") format("truetype");
-  font-weight: 100 900; /* Regular weight */
+  font-weight: 100 900; 
   font-style: italic;
-}
-@font-face {
-  font-family: "DM";
-  src: url("src/assets/Fonts/DMSerifDisplay-Regular.ttf") format("truetype");
-  font-weight: 400; /* Regular weight */
-  font-style: normal;
-  font-display: "swap";
-}
-@font-face {
-  font-family: "slab";
-  src: url("src/assets/Fonts/Slab.ttf") format("truetype");
-  font-weight: 100 900; /* Regular weight */
-  font-style: normal;
-}
+} */
+
 /* For Webkit Browsers (Chrome, Edge, Safari, Opera) */
 ::-webkit-scrollbar {
-  width: 4px; /* Width of the scrollbar */
+  width: 14px; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #fd0505;
   /* Background of the scrollbar track */
 }
 
